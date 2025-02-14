@@ -9,7 +9,7 @@ file(GLOB SOURCES "*.cpp" "*.h" "Utils/*.cpp" "Utils/*.h")
 include_directories("../3rdparty")
 include_directories("../NestingLib/include")
 
-add_executable(${PROJECT_NAME} ${SOURCES})
+add_executable(${PROJECT_NAME} ${SOURCES} "main.cpp")
 target_link_libraries(${PROJECT_NAME} NestingLib)
 
 
